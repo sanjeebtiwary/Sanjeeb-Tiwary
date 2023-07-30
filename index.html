@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+  
     
     <div id="wrapper">
 
@@ -27,20 +31,22 @@
 
             </div>
 
+            <div id="hero-section">
+
             <div class="hero-section">
+              <div class="fade-in-container" id="fade-in-container"></div>
 
                 <div class="faded-text">Sanjeeb Tiwary</div>
     
                 <div class="hero-section-left">
-                    <div class="hero-section-heading">Hi! Sanjeeb Tiwary</div>
+                    <div class="hero-section-heading">Hi, I am Sanjeeb Tiwary</div>
                     
                     <div class="hero-section-heading hero-section-sub-heading">
-                        I am a <span class="role"></span>
+                      A <span class="role"></span>
                     </div>
     
                     <div class="hero-section-description">
-                        I’m a Data Scientist and here is my sample portfolio website. Here you’ll
-                        learn about my journey as a Data Scientist.
+                        I’m a Data Scientist Student and here is my portfolio website.
                     </div>
                     
                     <div class="btn-pink" id="btn">Hire me</div>
@@ -54,12 +60,6 @@
                       <div class="absolute icons icon-cube">
                         <img src="./images/userAsset/cube.png" alt="" />
                       </div>
-                      <div class="absolute icons icon-circle">
-                        <img src="./images/userAsset/circle.png" alt="" />
-                      </div>
-                      <div class="absolute icons icon-zigzag">
-                        <img src="./images/userAsset/zigzags.png" alt="" />
-                      </div>
                       <div class="absolute icons icon-plus">
                         <img src="./images/userAsset/plus.png" alt="" />
                       </div>
@@ -67,23 +67,48 @@
                         <img src="./images/userAsset/dp.jpg" alt="" />
                       </div>
                 </div>
+              </div>
     
             </div>
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+          <script>
+            VANTA.GLOBE({
+              el: "#hero-section",
+              mouseControls: true,
+              touchControls: true,
+              gyroControls: false,
+              minHeight: 200.00,
+              minWidth: 200.00,
+              scale: 1.00,
+              scaleMobile: 1.00,
+              color: 0x7f2ce0,
+              color2: 0x6a71cf,
+              size: 0.90,
+              backgroundColor: 0xf9f9f9
+            })
+          </script>
         </div>
 
         <div class="project-section" id="projects">
-            <h2 class="page-header">Projects</h2>
+            <h1 class="page-header">
+              Projects hii
+            </h1>
 
             <div class="project-container">
                 <div class="project-card" id="project1">
                     <div class="project-number project-number-right">01</div>
                     <div class="project-content project-content-left">
                       <div class="project-skill-container">
-                        <img class="project-skill" src="./images/stack/ml.jpg" alt="" />
-                        <img class="project-skill" src="./images/stack/django.jpg" alt="" />
-                        <img class="project-skill" src="./images/stack/python.jpg" alt="" />
+                        <img class="project-skill" src="./images/stack/ml.png" alt="" />
+                        <img class="project-skill" src="./images/stack/analytics.svg" alt="" />
+                        <img class="project-skill" src="./images/stack/Git.png" alt="" />
+                        <img class="project-skill" src="./images/stack/dijango.png" alt="" />
+                        <img class="project-skill" src="./images/stack/sklearn.ong" alt="" />
+                        <img class="project-skill" src="./images/stack/Python.png" alt="" />
                         <img class="project-skill" src="./images/stack/powerBi.jpg" alt="" />
-                        <img class="project-skill" src="./images/stack/excel.jpg" alt="" />
+                        <img class="project-skill" src="./images/stack/excel.png" alt="" />
                         <img class="project-skill" src="./images/stack/MongoDB.svg" alt="" />
                       </div>
                         
@@ -94,14 +119,13 @@
 
                         </p>
                         <div class="btn-grp">
-                            <button class="btn-pink btn-project">Read More</button>
-                            <a href="https://github.com/aryansingh-123">
+                          <a href="https://github.com/sanjeebtiwary/Stocks-Visualizing-and-Forecasting-of-Real-Time-Data/blob/main/README.md" class="btn-pink btn-project">
+                            Read More
+                          </a>
+                          <a href="https://github.com/sanjeebtiwary/Stocks-Visualizing-and-Forecasting-of-Real-Time-Data">
                             <i title="GitHubLink" class="fa-brands fa-github icon"></i>
-                            </a>
-                            <a href="http://aryansingh-123.github.io/minor_project/">
-                            <i title="Live Link" class="fa-solid fa-link icon"></i>
-                            </a>
-                        </div>
+                          </a>
+                        </div>                        
                     </div>
                 </div>
 
@@ -109,7 +133,7 @@
                   <div class="project-number project-number-left">02</div>
                   <div class="project-content project-content-right">
                     <div class="project-skill-container">
-                      <img class="project-skill" src="./images/stack/HTML.png" alt="" />
+                      <img class="project-skill" src="./images/stack/python.jpg" alt="" />
                       <img class="project-skill" src="./images/stack/CSS.png" alt="" />
                       <img class="project-skill" src="./images/stack/Javascript.svg" alt="" />
                       <img class="project-skill" src="./images/stack/NextJsCircle.png" alt="" />
@@ -309,18 +333,19 @@
               </div>
 
               <div class="icon-wrapper">
-                <a href="https://www.linkedin.com/in/aryan-kumar-singh-a3a08a20b/"><i class="fa-brands fa-linkedin icon"></i></a>
-                <a href="https://github.com/aryansingh-123"><i class="fa-brands fa-github icon"></i></a>
-                <i class="fa-brands fa-twitter icon"></i>
-                <i class="fa-brands fa-instagram icon"></i>
-                <i class="fa-regular fa-envelope icon"></i>
+                <a href="https://www.linkedin.com/in/sanjeeb-tiwary-241847200/"><i class="fa-brands fa-linkedin icon"></i></a>
+                <a href="https://github.com/sanjeebtiwary"><i class="fa-brands fa-github icon"></i></a>
+                <a href="https://twitter.com/SanjeebTiwary1"><i class="fa-brands fa-twitter icon"></i></a>
+                <a href="mailto:sanjeebtiwary9006@gmail"><i class="fa-regular fa-envelope icon"></i></a>
               </div>
+              
 
             </div>
           </div>
         </footer>
 
     </div>
+
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
   <script>
@@ -338,5 +363,12 @@
       backDelay: 1000,
     });
   </script>
+  <script>
+    window.addEventListener("load", function() {
+        const loadingOverlay = document.querySelector(".loading-overlay");
+        loadingOverlay.classList.add("hidden");
+    });
+</script>
+  <script src="navbarScroll.js"></script>
 </body>
 </html>
