@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+
+
 *{
   margin:0;
   padding:0;
@@ -425,244 +428,74 @@
     }
   }
 
-  .project-section {
-    margin-top: 4rem;
-  }
-  
-
-  .page-header{
-    position: absolute;
-    user-select: none;
-    font-size: 5rem;
-    color: rgb(231, 231, 231);
-    bottom: -8%;
-    padding-top: 40rem;
-    left: 40%;
-    font-weight: bold;
-    background: linear-gradient(to bottom, rgb(235, 217, 251), rgba(231, 231, 231, 0));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: all 3s;
-  }
-  .project-container{
-    max-width: 1200px;
-    margin:0 auto;
-    padding:3rem 0;
-
-    display:flex;
-    flex-direction:column;
-    gap:120px;
-  }
-
-  .project-card{
-    width:90%;
-    height:550px;
-    background-image: url(./images/projects/project11.png);
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    position:relative;
-    box-shadow:0px 0px 40px #1f1f1f;
-  }
-
-  .project-card::after{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color: #1f1f1f9a;
-    z-index:0;
-    /* transform: scaleX(1); */
-  }
-
-  .project-card::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background: linear-gradient(45deg, #353e6d, #4f3b76be, #7d488d7c);
-    transform:scaleX(0);
-    transform-origin: left;
-    transition: all 0.4s;
-    z-index:1;
-  }
-
-  .project-card:hover::before{
-    transform:scaleX(1);
-  }
-
-  .project-number{
-    position:absolute;
-    font: size 200px;;
-    font-weight:1000;
-    color:white;
-    z-index:20;
-    /* display:none; */
-    opacity: 0;
-  }
-
-  .project-card:hover .project-number{
-    /* display:block; */
-    opacity: 1;
-  }
-
-  .project-number-right{
-    right:-40px;
-    top:-45px;
-  }
-
-  .project-number-left{
-    left:-40px;
-    top:-45px;
-  }
-
-  .project-content{
-    position:absolute;
-    display:flex;
-    flex-direction:column;
-    color:white;
-    padding:2em;
-    bottom:20%;
-    z-index:5;
-    gap:1em;
-    transition:all 0.4s;
-  }
 
 
-  .project-content-left{ 
-    left:10%;
-  }
+.certificate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .project-content-right{ 
-    right:10%;
-  }
+.certificate img {
+  top: -10px;
+  width: 210px;
+  height: 200px;
+  gap: 20px;
+  border-spacing: 20px;
+  transition: transform 0.5s ease;
+}
 
-  .project-skills-container{
-    width:60%;
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
-  
-  }
+.certificate:hover img {
+  transform: scale(1.1);
+}
 
-  .project-skill{
-    width:50px;
-  }
+@keyframes floatAnimation {
+  0% { transform: translateY(-5px); }
+  50% { transform: translateY(5px); }
+  100% { transform: translateY(-5px); }
+}
 
-  .project-heading{
-    font-size:50px;
-    font-weight: bold;
-    line-height:3rem;
-  }
-  
-  .project-subHeading{
-    width:70%;
-    font-size:16px;
-    font-style: italic;
-  }
+.certificate img:nth-child(odd) {
+  animation: floatAnimation 2s infinite alternate;
+}
+
+.certificate img:nth-child(even) {
+  animation: floatAnimation 2s infinite alternate-reverse;
+}
+
+.certificate img:nth-child(odd) {
+  animation: floatAnimation 2s infinite alternate; /* Apply animation to the first image */
+}
+
+.certificate img:nth-child(even) {
+  animation: floatAnimation 2s infinite alternate-reverse; /* Apply animation to the second image */
+}
+
+.Experience-fead-text {
+  padding-top: 4rem;
+  user-select: none;
+  font-size: 5rem;
+  padding-left: 5rem;
+  color: rgb(107, 32, 168);
+  font-weight: bold;
+  background: linear-gradient(to bottom, rgb(148, 116, 182), rgba(231, 231, 231, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s;
+}
+
+.Experience-fead-text:hover {
+  color: rgb(107, 32, 168);
+  letter-spacing: 0.9rem;
+}
 
 
-  .btn-grp{
-    display:flex;
-    gap:0.9rem;
-    align-items:center;
-  }
 
-  .btn-project:hover{
-    border:none;
-  }
 
-  .icon{
-    cursor:pointer;
-    color:white;
-    font-size:35px;
-    transition:all 0.4s;
-  }
 
-  .icon:hover{
-    color:var(--bgOrange);
-  }
 
-  .project-card:hover .project-content{
-    transform:scale(1.1);
-  }
 
-  #project1{
-    background-image: url(./images/projects/forecasting.jpg);
-  }
-
-  #project2{
-    margin-left:120px;
-    background-image: url(./images/projects/Ecommerce.jpg);
-  }
-  #project3{
-    background-image: url(./images/projects/Project3.png);
-  }
-  #project4{
-    margin-left:120px;
-    background-image: url(./images/projects/Project4.png);
-  }
-
-  @media (max-width:1300px) {
-    .page-header {
-      padding-top: 30px;
-      color: var(--bgOrange);
-      text-align: center;
-      font-size: 40px;
-    }
-    .project-container {
-      padding: 5px;
-      margin: 10px;
-      gap: 60px;
-    }
-    .project-card {
-      width: 100%;
-      height: 300px;
-    }
-    .project-card {
-      background-size: cover;
-      background-position: center;
-    }
-    .project-content {
-      scale: 0.5;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      top: 0;
-    }
-    .project-content-left {
-      left: 0;
-    }
-    .project-heading {
-      font-size: 60px;
-      width: 100%;
-    }
-    .project-sub-heading {
-      width: 150%;
-    }
-    #project2 {
-      margin-left: 0;
-    }
-    #project4 {
-      margin-left: 0;
-    }
-    .project-skill-container {
-      width: 100%;
-    }
-    .project-skill {
-      width: 35px;
-    }
-    .project-card:hover .project-number {
-      display: none;
-    }
-    .project-card:hover .project-content {
-      scale: 0.55;
-    }
-  }
 
   .skills-container{
     position:relative;
