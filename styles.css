@@ -39,8 +39,8 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  opacity: 1; /* Set initial opacity to 1 */
-  transition: opacity 0.3s ease; /* Add a transition effect for opacity */
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
 .loading-overlay.hidden {
@@ -74,16 +74,19 @@
 }
 
 #wrapper{
-    height:auto;
-    overflow-y:auto;
+    max-width: 1200px;
+    height: auto;
+    overflow-y: auto;
     overflow-x: hidden;
-
+    margin: 0 auto;
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px; /* Set the maximum width for the container */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 1rem; /* Add some horizontal padding to the container */
 }
+
 
 .navbar {
   position: fixed;
@@ -95,7 +98,7 @@
   align-items: center;
   padding-top: 1rem;
   background: linear-gradient(45deg, #b4a7ff, #ceb8fcbe, #f3d0fe7c);
-  height: 60px;
+  height: 3rem;
   z-index: 999;
   transition: background-color 0.3s ease, padding 0.3s ease;
   box-shadow: 0 2px 4px rgba(52, 52, 52, 0.1); /* Add a light under-shadow */
@@ -185,7 +188,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 10%;
   height: 100%;
   opacity: 0; /* Set initial opacity to 0 */
   transition: opacity 2s; /* Apply a 2-second transition to the 'opacity' property */
@@ -222,13 +225,14 @@
 
 .hero-section-heading{
     font-size: 35px;
-    right: -20rem;
+    right: -40rem;
     color: #343d68;
     font-weight: 500;
 }
 
 .role{
     color: #4e45d5;
+    right: 20rem;
     font-weight: 800;
 }
 
@@ -427,11 +431,19 @@
   
 
   .page-header{
-    color: rgb(9, 9, 10);
-    font-size:100px;
-    text-align:left;
-
-    text-size-adjust: 50rem;
+    position: absolute;
+    user-select: none;
+    font-size: 5rem;
+    color: rgb(231, 231, 231);
+    bottom: -8%;
+    padding-top: 40rem;
+    left: 40%;
+    font-weight: bold;
+    background: linear-gradient(to bottom, rgb(235, 217, 251), rgba(231, 231, 231, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 3s;
   }
   .project-container{
     max-width: 1200px;
@@ -661,7 +673,7 @@
   }
 
 .skill-container-left{
-  width:50%;
+  width:80%;
   display:flex;
   flex-direction:column;
 }
@@ -669,7 +681,8 @@
 .skill-container-right{
   display:flex;
   flex-wrap:wrap;
-  width:50%;
+  width:80%;
+    right: 0rem;
   position:relative;
   gap:2rem;
   justify-content: center;
@@ -681,7 +694,7 @@
   font-style:bold;
   color:rgb(231,231,231);
   bottom:-34.5%;
-  right:-25%;
+  right: 5rem;
   user-select:none;
   overflow-y:hidden;
 }
@@ -703,7 +716,7 @@
 }
 
 .skills-logo{
-  width:90px;
+  width:100px;
   transition:all 0.5s;
 }
 
@@ -826,6 +839,7 @@ footer{
 .link-wrapper{
   display:flex;
   gap:1.2rem;
+    right: -50rem;
 }
 
 .link-wrapper div a{
