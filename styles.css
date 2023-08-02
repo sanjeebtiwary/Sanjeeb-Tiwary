@@ -10,7 +10,7 @@
   scroll-behavior: smooth;
 }
 :root {
-  --bgOrange: #e84949;
+  --bgOrange: #72449d;
 }
 
 #wrapper{
@@ -73,7 +73,7 @@
   scroll-behavior: smooth;
 }
 :root {
-  --bgOrange: #e84949;
+  --bgOrange: #5244a9;
 }
 
 #wrapper{
@@ -428,7 +428,7 @@
     }
   }
 
-
+/* Certifocates */
 
 .certificate {
   display: flex;
@@ -471,14 +471,18 @@
   animation: floatAnimation 2s infinite alternate-reverse; /* Apply animation to the second image */
 }
 
+/* Experince */
+
 .Experience-fead-text {
+  padding-bottom: 8rem;
   padding-top: 4rem;
   user-select: none;
   font-size: 5rem;
   padding-left: 5rem;
   color: rgb(107, 32, 168);
   font-weight: bold;
-  background: linear-gradient(to bottom, rgb(148, 116, 182), rgba(231, 231, 231, 0));
+  margin-left: 5rem;
+  background: linear-gradient(to bottom, rgb(132, 61, 208), rgba(174, 112, 194, 0.78), rgba(174, 112, 194, 0.47));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -487,57 +491,76 @@
 
 .Experience-fead-text:hover {
   color: rgb(107, 32, 168);
-  letter-spacing: 0.9rem;
+  letter-spacing: 1rem;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .slider {
-  width: 100%;
+  position: relative;
+  width: 800px;
+  height: 500px;
   overflow: hidden;
+  margin: 0 auto; /* Add this line to center-align the slider horizontally */
 }
+
 
 .slides {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
 }
 
 .slide {
-  min-width: 100%;
+  flex: 0 0 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
 .slide img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
 .slide-content {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(50, 41, 129, 0.99);
   color: #fff;
   padding: 20px;
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  width: 95%;
+  border-radius: 20px;
 }
 
 .slide:hover .slide-content {
-  opacity: 1;
+}
+
+.slide:hover .slide-content {
+    background: linear-gradient(to bottom, rgb(71, 41, 107));
 }
 
 .prev-btn,
 .next-btn {
   position: absolute;
-  top: 235%;
+  top: 50%;
   transform: translateY(-50%);
   font-size: 24px;
   background: rgba(255, 255, 255, 0);
-  color: #e70606;
+  color: #51227e;
   border: none;
   padding: 10px;
   cursor: pointer;
   transition: background 0.3s ease-in-out;
+  border-radius: 20px;
 }
 
 .prev-btn {
@@ -550,35 +573,14 @@
 
 .prev-btn:hover,
 .next-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(158, 120, 222, 0.64);
+  border-radius: 20px;
 }
 
 
 
+/*skill*/
 
-  .skills-container{
-    position:relative;
-    display:flex;
-    padding:5rem;
-    margin:10rem auto;
-    gap:30px;
-  }
-
-.skill-container-left{
-  width:80%;
-  display:flex;
-  flex-direction:column;
-}
-
-.skill-container-right{
-  display:flex;
-  flex-wrap:wrap;
-  width:80%;
-    right: 0rem;
-  position:relative;
-  gap:2rem;
-  justify-content: center;
-}
 
 .skill-fade-text{
   position:absolute;
@@ -591,51 +593,18 @@
   overflow-y:hidden;
 }
 
-.blob-style{
-  position:absolute;
-  top:50%;
-  left:50%;
-  z-index:-5;
-  transform:translate(-50%, -50%);
-  animation: blobAnimate 3s linear infinite;
-}
 
-@keyframes blobAnimate {
-  50%{
-    top:54%;
-    left:46%;
-  }
-}
 
-.skills-logo{
-  width:100px;
-  transition:all 0.5s;
-}
 
-.skills-logo:hover{
-  transform:scale(1.2);
-}
 
-.skill-heading{
-  font-size:50px;
-  font-style: bold;
-  color: var(--bgOrange);
-  line-height: 50px;
-}
 
-.caps{
-  font-size:90px;
-}
 
-.skill-subHeading{
-  margin-top: 1rem;
-  width:85%;
-  text-align: justify;
-}
 
-.skill-subHeading p{
-  margin:15px 0;
-}
+
+
+
+
+/* Contectus */
 
 .contactus-form-container{
   width:100%;
@@ -715,6 +684,7 @@ footer{
 .footer-wrapper{
   display:flex;
   gap:1rem;
+  width:20%;
   padding:1.2rem;
   justify-content: space-between;
   align-items:center;
@@ -722,8 +692,8 @@ footer{
 
 .footer-faded-text{
   position:absolute;
-  left:0;
-  bottom:0;color:#535c87;
+  right:0;
+  bottom:0;color: rgba(181, 171, 224, 0.73);
   user-select:none;
   font-size:5em;
 }
@@ -731,7 +701,7 @@ footer{
 .link-wrapper{
   display:flex;
   gap:1.2rem;
-    right: -50rem;
+  right: -50rem;
 }
 
 .link-wrapper div a{
@@ -745,6 +715,8 @@ footer{
 }
 
 .icon-wrapper{
+  width: 50%;
+  height: 50%;
   display:flex;
   gap:1rem;
   border: 5px;
