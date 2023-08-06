@@ -618,7 +618,7 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -640,7 +640,7 @@
 /* Styling for the skill heading container */
 .skill-heading {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   animation: fadeIn 1s ease-out;
   font-size: 40px;
 }
@@ -668,10 +668,11 @@
 
 /* Basic styling for the entire container */
 .skill-subHeading {
-  background-color: #f0f0f0;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
+  padding: 20px;
+  text-align: justify;
 }
 
 /* Styling for the first paragraph */
