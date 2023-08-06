@@ -219,7 +219,7 @@
 .hero-section-left{
     /* width:100%; */
     letter-spacing: 0.1rem;
-    border-left: 20rem;
+    border-left: 30rem;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -228,7 +228,7 @@
 
 .hero-section-heading{
     font-size: 35px;
-    right: -40rem;
+    right: -30rem;
     color: #343d68;
     font-weight: 500;
 }
@@ -290,6 +290,7 @@
     position:relative;
     top: 10px;
     margin-top: 70px;
+    right: 90px;
   }
 
   .absolute{
@@ -431,6 +432,7 @@
 /* Certifocates */
 
 .certificate {
+  padding-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -470,6 +472,14 @@
 .certificate img:nth-child(even) {
   animation: floatAnimation 2s infinite alternate-reverse; /* Apply animation to the second image */
 }
+
+
+
+
+
+
+
+
 
 /* Experince */
 
@@ -579,21 +589,128 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*skill*/
-
-
-.skill-fade-text{
-  position:absolute;
-  font-size:15em;
-  font-style:bold;
-  color:rgb(231,231,231);
-  bottom:-34.5%;
-  right: 5rem;
-  user-select:none;
-  overflow-y:hidden;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f3f3;
+  padding-bottom: 20px;
 }
 
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
+/* Keyframes animation for fading in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styling for the skill heading container */
+.skill-heading {
+  text-align: center;
+  margin-top: 50px;
+  animation: fadeIn 1s ease-out;
+  font-size: 40px;
+}
+
+/* Styling for capitalized letters */
+.caps {
+  font-size: 48px;
+  font-weight: bold;
+  color: #8749bb; /* Change this color as desired */
+  display: inline-block;
+  transform-origin: center;
+  transform: scale(0.8);
+  animation: pulse 2s infinite alternate;
+}
+
+/* Animation for pulsating effect on capitalized letter */
+@keyframes pulse {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Basic styling for the entire container */
+.skill-subHeading {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+/* Styling for the first paragraph */
+.skill-subHeading p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styling for the name */
+.skill-subHeading p:first-child::after {
+  content: " - Sanjeeb Tiwary";
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* Styling for the university */
+.skill-subHeading p:first-child::before {
+  content: "Pursuing B.Tech from KIIT, Bhubaneswar";
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+}
+
+/* Styling for the second paragraph */
+.skill-subHeading p:last-child {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Styling for skills list */
+.skill-subHeading ul {
+  list-style-type: square;
+}
+
+/* Styling for individual skills */
+.skill-subHeading li {
+  margin-bottom: 5px;
+}
 
 
 
@@ -606,119 +723,98 @@
 
 /* Contectus */
 
-.contactus-form-container{
-  width:100%;
-  background-color: rgb(231,231,231);
-}
+/* Reset some default styles */
 
-.contactus-heading{
-  font-size:5em;
-  color:var(--bgOrange);
-  padding-top: 2rem;
-}
 
-.contactus-sub-heading{
-  font-size:3rem;
-  color:#343d68aa;
-  text-transform: capitalize;
-}
-
-.contactus-form-container{
-  margin-top:25px;
-  display:flex;
-  align-items: center;
+/* Styling for the container */
+.container {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+
 }
 
-.form{
-  display:flex;
+/* Styling for the content */
+.content {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Styling for the left-side */
+.left-side {
+  flex: 1;
+  display: flex;
   flex-direction: column;
-  gap:30px;
-  width:70%;
-  margin: 2rem 5rem;
+  align-items: center;
+  padding: 20px;
+  background-color: #4e54c8;
+  color: #fff;
 }
 
-.formfield-container{
-  width:100%;
+/* Styling for the right-side */
+.right-side {
+  flex: 2;
+  padding: 20px;
 }
 
-.formfield{
-  width:100%;
-  height:42px;
-  padding: 0 2rem;
-  font-size:18px;
+/* Styling for the topic text */
+.topic-text {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #4e54c8;
+}
+
+/* Styling for the input boxes and textarea */
+.input-box,
+.message-box textarea {
+  margin-bottom: 15px;
+}
+
+/* Styling for the input fields and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 2px 2px 10px #1f1f1f;
-  font-weight:500;
-  border:none;
-  margin-top:27px;
 }
 
-.formfield-textarea{
-  height:auto;
-  padding-top:1rem;
+/* Styling for the button */
+.button {
+  text-align: right;
 }
 
-#submit-btn{
-  border:none;
-  font-size: 1.4rem;
-  margin: 1rem 0;
+/* Styling for the submit button */
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4e54c8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-#submit-btn:hover{
-  scale:0.9;
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+  background-color: #343f99;
 }
 
-.submit-icon{
-  padding:0 1rem;
-  font-size:1.5rem;
+/* Animation for details */
+.details {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-in-out forwards;
 }
 
-footer{
-  position:relative;
-  margin-top:-1px;
-  background-color: #343d68;
-  padding:5rem;
-}
-
-.footer-wrapper{
-  display:flex;
-  gap:1rem;
-  width:20%;
-  padding:1.2rem;
-  justify-content: space-between;
-  align-items:center;
-}
-
-.footer-faded-text{
-  position:absolute;
-  right:0;
-  bottom:0;color: rgba(181, 171, 224, 0.73);
-  user-select:none;
-  font-size:5em;
-}
-
-.link-wrapper{
-  display:flex;
-  gap:1.2rem;
-  right: -50rem;
-}
-
-.link-wrapper div a{
-  color:white;
-  text-decoration:none;
-  transition:all 0.6s;
-}
-
-.link-wrapper div a:hover{
-  color:var(--bgOrange);
-}
-
-.icon-wrapper{
-  width: 50%;
-  height: 50%;
-  display:flex;
-  gap:1rem;
-  border: 5px;
-  margin-right: 100px;
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
