@@ -2,16 +2,6 @@
 
 
 
-*{
-  margin:0;
-  padding:0;
-  /* box-sizing:border-box; */
-  font-family: "Be Vietnam Pro", sans-serif;
-  scroll-behavior: smooth;
-}
-:root {
-  --bgOrange: #72449d;
-}
 
 #wrapper{
     height:20rem;
@@ -65,13 +55,7 @@
   100% { transform: rotate(360deg); }
 }
 
-*{
-  margin:0;
-  padding:0;
-  /* box-sizing:border-box; */
-  font-family: "Be Vietnam Pro", sans-serif;
-  scroll-behavior: smooth;
-}
+
 :root {
   --bgOrange: #5244a9;
 }
@@ -100,7 +84,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
-  background: linear-gradient(45deg, #b4a7ff, #ceb8fcbe, #f3d0fe7c);
+  background: linear-gradient(45deg, #b4a7ff, #ceb8fc, #f3d0fe); /* Remove transparency */
   height: 3rem;
   z-index: 999;
   transition: background-color 0.3s ease, padding 0.3s ease;
@@ -108,8 +92,19 @@
 }
 
 
+
 .logo {
   width: 100px;
+  animation: logoAnimation 2s infinite alternate;
+}
+
+@keyframes logoAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 
 .logo-container {
@@ -121,7 +116,13 @@
 .logo-text {
   margin-left: 5px;
   font-size: 28px;
-  transition: margin 0.3s ease;
+  transition: margin 0.3s ease, transform 0.3s ease;
+}
+
+.logo-text:hover {
+  margin-left: 15px;
+  transform: scale(1.1); /* Apply zoom effect on hover */
+  transition: margin 0.3s ease, transform 0.3s ease;
 }
 
 .nav-items {
@@ -746,13 +747,14 @@
 
 /* Styling for the left-side */
 .left-side {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: normal;
   padding: 20px;
   background-color: #4e54c8;
   color: #fff;
+  justify-items: center;
+  row-gap: 20px;
 }
 
 /* Styling for the right-side */
@@ -768,6 +770,11 @@
   color: #4e54c8;
 }
 
+.topic-text-in{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
 /* Styling for the input boxes and textarea */
 .input-box,
 .message-box textarea {
@@ -778,7 +785,8 @@
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
+  padding-top: 10px;
+  width: 50%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -799,6 +807,8 @@ input[type="submit"] {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+
 
 /* Hover effect for the submit button */
 input[type="submit"]:hover {
