@@ -724,15 +724,12 @@
 
 /* Contectus */
 
-/* Reset some default styles */
-
-
 /* Styling for the container */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 40px;
 
 }
 
@@ -743,6 +740,8 @@
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  left: 50px;
+  max-width: 1000px;
 }
 
 /* Styling for the left-side */
