@@ -69,9 +69,9 @@
 }
 
 .container {
-    max-width: 1200px; /* Set the maximum width for the container */
+    max-width: 120px; /* Set the maximum width for the container */
     margin: 0 auto; /* Center the content horizontally */
-    padding: 0 1rem; /* Add some horizontal padding to the container */
+    padding: 0; /* Add some horizontal padding to the container */
 }
 
 
@@ -85,7 +85,7 @@
   align-items: center;
   padding-top: 1rem;
   background: linear-gradient(45deg, #b4a7ff, #ceb8fc, #f3d0fe); /* Remove transparency */
-  height: 3rem;
+  height: 2rem;
   z-index: 999;
   transition: background-color 0.3s ease, padding 0.3s ease;
   box-shadow: 0 2px 4px rgba(52, 52, 52, 0.1); /* Add a light under-shadow */
