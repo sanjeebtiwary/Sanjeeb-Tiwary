@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "javascript" # Replace with your chosen package ecosystem
+    directory: "D:\Project\SanjeebTiwaryWebsite-" # Replace with the actual directory path
+    schedule:
+      interval: "weekly" # Adjust the update frequency as needed
