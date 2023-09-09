@@ -901,15 +901,15 @@ button,
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 41rem;
-  top: 90;
+  /*top: 90;*/
   height: 10rem;
 }
       
 .sponsor-container iframe {
-  max-width: 100%;
+  max-width: 40rem;
   align-self: center;
-  width: 600px; /* Adjust this width as needed */
-  height: 125px; /* Adjust this height as needed */
+  width: 39rem; /* Adjust this width as needed */
+  height: 8rem; /* Adjust this height as needed */
   border-radius: 15px;
 }
 .a {
