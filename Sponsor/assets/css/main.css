@@ -356,6 +356,7 @@ section.special, article.special {
 
 header p {
   color: rgba(255, 255, 255, 0.5);
+  align-items: center;
   position: relative;
   margin: 0 0 1.5em 0; }
 
@@ -779,11 +780,15 @@ button,
 /* Header */
 #header h1 {
   font-size: 3.25em;
-  margin: 0 0 0.55em 0; }
+  margin: 0 0 0.55em 0;
+  text-align: center; /* Center-align the text horizontally */
+}
 
 #header p {
   font-size: 1.35em;
-  line-height: 1.65em; }
+  line-height: 1.65em;
+  text-align: center; /* Center-align the text horizontally */
+}
 
 #header a {
   color: inherit; }
@@ -885,23 +890,36 @@ button,
       left: auto;
       margin: 1em 0 0 0;
       position: relative; } }
-
+      
 .sponsor-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.5); /* 0.5 is the alpha (transparency) value */
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 41rem;
+  top: 90;
   height: 10rem;
-  left: 13rem;
 }
-
+      
 .sponsor-container iframe {
   max-width: 100%;
+  align-self: center;
   width: 600px; /* Adjust this width as needed */
   height: 125px; /* Adjust this height as needed */
   border-radius: 15px;
+}
+.a {
+  text-decoration: none; /* Remove underlines from the link */
+  color: #000; /* Set the text color */
+  transition: color 0.3s; /* Add a smooth transition for the color change */
+}
+
+/* Hover state */
+.a:hover {
+  color: #894bee; /* Change the text color when hovering */
 }
 
