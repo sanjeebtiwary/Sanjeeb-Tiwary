@@ -1349,3 +1349,14 @@ input, select, textarea {
 				}
 
 		}
+
+.h2 {
+
+    color: #000000; /* Set the text color */
+    transition: color 0.3s; /* Add a smooth transition for the color change */
+}
+		
+		  /* Hover state */
+.h2:hover {
+	color: #7937cb; /* Change the text color when hovering */
+}
