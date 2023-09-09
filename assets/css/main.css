@@ -1622,6 +1622,23 @@ input, select, textarea {
 			}
 
 		}
+.sponsor-button {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #0366d6; /* Choose your button color */
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.sponsor-button:hover {
+  background-color: #02274b; /* Button color on hover */
+}
+
 
 /* Footer */
 
@@ -1659,3 +1676,5 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
