@@ -42,4 +42,4 @@ This website and its content are licensed under the Creative Commons Attribution
 
 Thank you for visiting my website, and I hope you find it informative and inspiring!
 
-[Visit Website](https://sanjeebtiwary.github.io/Sanjeeb-Tiwary/index.html) | [Contact Me](mailto:sanjeebtiwary9006@hmail.com)
+[Visit Website](https://sanjeebtiwary.github.io/Sanjeeb-Tiwary/index.html) | [Contact Me](mailto:sanjeebtiwary9006@gmail.com)
