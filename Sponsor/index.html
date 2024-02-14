@@ -1,36 +1,44 @@
 <!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Sanjeeb Tiwary</title>
-		<link rel="icon" href="../images/userAsset/nav.jpg" type="image/png">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Sanjeeb Tiwary</title>
+    <link rel="icon" href="../images/userAsset/nav.jpg" type="image/png">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<h1>Sponsors & Supporters</h1>
-				<a href="..\index.html"> <!-- Replace "https://www.example.com" with your desired URL -->
-					<h1>Sanjeeb Tiwary</h1>
-				</a>
-				<p>Together, We Achieve Excellence.</p>
-			</header>
+<!-- Header -->
+<header id="header">
+    <h1>Sponsors & Supporters</h1>
+    <a href="..\index.html">
+        <h1>Sanjeeb Tiwary</h1>
+    </a>
+    <p>Together, We Achieve Excellence.</p>
+</header>
 
-		<!-- Signup Form -->
-		<div class="sponsor-container">
-			<iframe src="https://github.com/sponsors/sanjeebtiwary/card" title="Sponsor sanjeebtiwary" style="border: 0;"></iframe>
-		</div>
+<!-- Dynamic Sponsor Form -->
+<div class="sponsor-container" id="sponsor-container"></div>
 
+<script>
+    var sponsorContainer = document.getElementById('sponsor-container');
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://github.com/sponsors/sanjeebtiwary/card';
+    iframe.title = 'Sponsor sanjeebtiwary';
+    iframe.style.border = '0';
 
+    iframe.onload = function () {
+        console.log('GitHub Sponsors iframe loaded successfully.');
+    };
 
-			<script src="assets/js/main.js"></script>
+    iframe.onerror = function (event) {
+        console.error('Error loading GitHub Sponsors iframe:', event);
+    };
 
-	</body>
+    sponsorContainer.appendChild(iframe);
+</script>
+
+<script src="assets/js/main.js"></script>
+</body>
 </html>
