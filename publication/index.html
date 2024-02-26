@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Blog and publication</title>
+		<title>Blog and Publication</title>
 		<link rel="icon" href="../images/userAsset/nav.jpg" type="image/png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -22,6 +22,7 @@
 						<h1><a href="../index.html">Sanjeeb Tiwary</a></h1>
 						<nav class="links">
 							<ul>
+								<li><a href="single.html">About</a></li>
 								<li><a href="https://sanjeebtiwary.medium.com/">medium.com</a></li>
 								<li><a href="https://sanjeebtiwary.blogspot.com/">blogspot.com</a></li>
 
@@ -48,13 +49,13 @@
 						<!-- Search -->
 							<section>
 								<form class="search" method="get" action="#">
-									<input type="text" name="query" placeholder="Search" />
+									<input type="text" name="query" id="searchInput" placeholder="Search" oninput="performSearch()" />
 								</form>
 							</section>
 
 						<!-- Links -->
 							<section>
-								<ul class="links">
+								<ul class="links" id="searchResults">
 									<li>
 										<a href="https://sanjeebtiwary.medium.com/unleash-the-data-dragon-igniting-your-businesss-journey-to-unicorn-status-ee5f50eaaf8a">
 											<h3>Unleash the Data Dragon</h3>
@@ -62,27 +63,122 @@
 										</a>
 									</li>
 									<li>
-										<a href="#">
-											<h3>Dolor sit amet</h3>
-											<p>Sed vitae justo condimentum</p>
+										<a href="https://sanjeebtiwary.medium.com/unleashing-the-power-of-ai-as-a-service-aiaas-for-professionals-and-ai-scientists-74675c02a0e0">
+											<h3>Unleashing the Power of AI-as-a-Service (AIaaS) </h3>
+											<p>for Professionals and AI Scientists</p>
 										</a>
 									</li>
 									<li>
-										<a href="#">
-											<h3>Feugiat veroeros</h3>
-											<p>Phasellus sed ultricies mi congue</p>
+										<a href="https://sanjeebtiwary.medium.com/unlocking-the-path-to-becoming-a-linkedin-top-voice-a38dd4665f51">
+											<h3>Unlocking the Path to Becoming a LinkedIn Top Voice</h3>
+
 										</a>
 									</li>
 									<li>
-										<a href="#">
-											<h3>Etiam sed consequat</h3>
-											<p>Porta lectus amet ultricies</p>
+										<a href="https://sanjeebtiwary.medium.com/discover-the-power-of-fastapi-the-ultimate-solution-for-building-high-performance-web-applications-a907434c9b6b">
+											<h3>Discover the power of FastAPI</h3>
+											<p>The ultimate solution for building high-performance web applications.</p>
+										</a>
+									</li>
+									<li>
+										<a href="https://sanjeebtiwary.medium.com/exploring-the-wonders-of-neural-network-architectures-c0a5be039d38">
+											<h3>Exploring the Wonders of Neural Network Architectures</h3>
+
+										</a>
+									</li>
+									<li>
+										<a href="https://sanjeebtiwary.medium.com/geospatial-analysis-unveiled-navigating-the-world-through-data-and-geography-8928187dae8e">
+											<h3>Geospatial Analysis Unveiled</h3>
+											<p> Navigating the World through Data and Geography</p>
+										</a>
+									</li>
+									<li>
+										<a href="https://sanjeebtiwary.medium.com/navigating-the-data-science-landscape-lessons-on-what-to-do-and-what-not-to-do-e30ae425c5a3">
+											<h3>Navigating the Data Science Landscape</h3>
+											<p> What REALLY is Data Science?</p>
+										</a>
+									</li>
+									<li>
+										<a href="https://sanjeebtiwary.medium.com/maximizing-network-efficiency-and-coverage-in-wireless-sensor-networks-7cacfa99c41f">
+											<h3>Maximizing Network Efficiency and Coverage in Wireless Sensor Networks</h3>
+
+										</a>
+									</li>
+									<li>
+										<a href="https://sanjeebtiwary.medium.com/exploring-novel-frontiers-in-generative-artificial-intelligence-unveiling-the-future-of-creativity-c5c5b12e78af">
+											<h3>Exploring Novel Frontiers in Generative Artificial Intelligence</h3>
+											<p>  Unveiling the Future of Creativity</p>
+										</a>
+									</li>
+									<li>
+										<a href="https://sanjeebtiwary.medium.com/unveiling-the-future-general-artificial-intelligence-gai-24135f2509f5">
+											<h3>Unveiling the Future</h3>
+											<p>General Artificial Intelligence (GAI)</p>
+										</a>
+									</li>
+									<li>
+										<a href="https://sanjeebtiwary.medium.com/prediction-of-algae-growth-a-machine-learning-perspective-2103123078ab">
+											<h3>Prediction of Algae Growth</h3>
+											<p> A Machine Learning Perspective</p>
+										</a>
+									</li>
+									<li>
+										<a href="https://sanjeebtiwary.blogspot.com/2024/02/blog-post.html">
+											<h3>Unraveling the Wonders of Data Science</h3>
+											<p>  A Journey into the World of Insights</p>
+										</a>
+									</li>
+									<li>
+										<a href="https://sanjeebtiwary.blogspot.com/2024/02/in-dynamic-landscape-of-technological.html">
+											<h3>Unleashing the Power of Conversations with IBM Watsonx Assistant</h3>
 										</a>
 									</li>
 								</ul>
 							</section>
 
 						<!-- Actions -->
+
+						<script>
+  // Your list of links
+  const links = [
+    { title: "Unleash the Data Dragon", description: "Igniting Your Business’s Journey to Unicorn Status!", url: "https://sanjeebtiwary.medium.com/unleash-the-data-dragon-igniting-your-businesss-journey-to-unicorn-status-ee5f50eaaf8a" },
+		  { title: "Unleashing the Power of AI-as-a-Service (AIaaS)", description: "for Professionals and AI Scientists", url: "https://sanjeebtiwary.medium.com/unleashing-the-power-of-ai-as-a-service-aiaas-for-professionals-and-ai-scientists-74675c02a0e0" },
+		  { title: "Unlocking the Path to Becoming a LinkedIn Top Voice", description: "", url: "https://sanjeebtiwary.medium.com/unlocking-the-path-to-becoming-a-linkedin-top-voice-a38dd4665f51" },
+		  { title: "Discover the power of FastAPI", description: "The ultimate solution for building high-performance web applications.", url: "https://sanjeebtiwary.medium.com/discover-the-power-of-fastapi-the-ultimate-solution-for-building-high-performance-web-applications-a907434c9b6b" },
+		  { title: "Exploring the Wonders of Neural Network Architectures", description: "", url: "https://sanjeebtiwary.medium.com/exploring-the-wonders-of-neural-network-architectures-c0a5be039d38" },
+		  { title: "Geospatial Analysis Unveiled", description: " Navigating the World through Data and Geography", url: "https://sanjeebtiwary.medium.com/geospatial-analysis-unveiled-navigating-the-world-through-data-and-geography-8928187dae8e" },
+		  { title: "Navigating the Data Science Landscape", description: "What REALLY is Data Science?", url: "https://sanjeebtiwary.medium.com/navigating-the-data-science-landscape-lessons-on-what-to-do-and-what-not-to-do-e30ae425c5a3" },
+		  { title: "Maximizing Network Efficiency and Coverage in Wireless Sensor Networks", description: "", url: "https://sanjeebtiwary.medium.com/maximizing-network-efficiency-and-coverage-in-wireless-sensor-networks-7cacfa99c41f" },
+		  { title: "Exploring Novel Frontiers in Generative Artificial Intelligence", description: "Unveiling the Future of Creativity", url: "https://sanjeebtiwary.medium.com/exploring-novel-frontiers-in-generative-artificial-intelligence-unveiling-the-future-of-creativity-c5c5b12e78af" },
+		  { title: "Unveiling the Future", description: "General Artificial Intelligence (GAI)", url: "https://sanjeebtiwary.medium.com/unveiling-the-future-general-artificial-intelligence-gai-24135f2509f5" },
+		  { title: "Prediction of Algae Growth", description: "A Machine Learning Perspective", url: "https://sanjeebtiwary.medium.com/prediction-of-algae-growth-a-machine-learning-perspective-2103123078ab" },
+		  { title: "Unraveling the Wonders of Data Science", description: "A Journey into the World of Insights", url: "https://sanjeebtiwary.blogspot.com/2024/02/blog-post.html" },
+		  { title: "Unleashing the Power of Conversations with IBM Watsonx Assistant", description: "", url: "https://sanjeebtiwary.blogspot.com/2024/02/in-dynamic-landscape-of-technological.html" },
+  ];
+
+  function performSearch() {
+    const searchInput = document.getElementById("searchInput");
+    const searchResults = document.getElementById("searchResults");
+
+    // Clear previous search results
+    searchResults.innerHTML = '';
+
+    const query = searchInput.value.toLowerCase();
+
+    // Filter links based on the search query
+    const filteredLinks = links.filter(link => link.title.toLowerCase().includes(query) || (link.description && link.description.toLowerCase().includes(query)));
+
+    // Populate search results
+    filteredLinks.forEach(link => {
+      const listItem = document.createElement("li");
+      const linkElement = document.createElement("a");
+      linkElement.href = link.url;
+      linkElement.innerHTML = `<h3>${link.title}</h3>${link.description ? `<p>${link.description}</p>` : ''}`;
+      listItem.appendChild(linkElement);
+      searchResults.appendChild(listItem);
+    });
+  }
+</script>
 
 
 					</section>
@@ -195,7 +291,7 @@
 											<header>
 												<h3><a href="https://sanjeebtiwary.blogspot.com/2024/02/in-dynamic-landscape-of-technological.html">Unleashing the Power of Conversations with IBM Watsonx Assistant</a></h3>
 												<time class="published" datetime="2015-10-20">Feb 25, 2024</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+												<a href="https://sanjeebtiwary.blogspot.com/2024/02/in-dynamic-landscape-of-technological.html" class="author"><img src="images/avatar.jpg" alt="" /></a>
 											</header>
 											<a href="https://sanjeebtiwary.blogspot.com/2024/02/in-dynamic-landscape-of-technological.html" class="image"><img src="images/pic04.jpg" alt="" /></a>
 										</article>
@@ -205,7 +301,7 @@
 											<header>
 												<h3><a href="https://sanjeebtiwary.medium.com/exploring-novel-frontiers-in-generative-artificial-intelligence-unveiling-the-future-of-creativity-c5c5b12e78af">Exploring Novel Frontiers in Generative Artificial Intelligence: Unveiling the Future of Creativity</a></h3>
 												<time class="published" datetime="2015-10-19">Aug 12, 2023</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+												<a href="https://sanjeebtiwary.medium.com/exploring-novel-frontiers-in-generative-artificial-intelligence-unveiling-the-future-of-creativity-c5c5b12e78af" class="author"><img src="images/avatar.jpg" alt="" /></a>
 											</header>
 											<a href="https://sanjeebtiwary.medium.com/exploring-novel-frontiers-in-generative-artificial-intelligence-unveiling-the-future-of-creativity-c5c5b12e78af" class="image"><img src="images/pic05.jpg" alt="" /></a>
 										</article>
@@ -213,21 +309,21 @@
 									<!-- Mini Post -->
 										<article class="mini-post">
 											<header>
-												<h3><a href="single.html">Odio congue mattis</a></h3>
-												<time class="published" datetime="2015-10-18">October 18, 2015</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+												<h3><a href="https://sanjeebtiwary.medium.com/unveiling-the-future-general-artificial-intelligence-gai-24135f2509f5">Unveiling the Future: General Artificial Intelligence (GAI)</a></h3>
+												<time class="published" datetime="2015-10-18">Aug 11, 2023</time>
+												<a href="https://sanjeebtiwary.medium.com/unveiling-the-future-general-artificial-intelligence-gai-24135f2509f5" class="author"><img src="images/avatar.jpg" alt="" /></a>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<a href="https://sanjeebtiwary.medium.com/unveiling-the-future-general-artificial-intelligence-gai-24135f2509f5" class="image"><img src="images/pic06.jpg" alt="" /></a>
 										</article>
 
 									<!-- Mini Post -->
 										<article class="mini-post">
 											<header>
-												<h3><a href="single.html">Enim nisl veroeros</a></h3>
-												<time class="published" datetime="2015-10-17">October 17, 2015</time>
-												<a href="#" class="author"><img src="images/avatar.jpg" alt="" /></a>
+												<h3><a href="https://sanjeebtiwary.medium.com/unlocking-the-path-to-becoming-a-linkedin-top-voice-a38dd4665f51">Unlocking the Path to Becoming a LinkedIn Top Voice</a></h3>
+												<time class="published" datetime="2015-10-17">Jan 30, 2024</time>
+												<a href="https://sanjeebtiwary.medium.com/unlocking-the-path-to-becoming-a-linkedin-top-voice-a38dd4665f51" class="author"><img src="images/avatar.jpg" alt="" /></a>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<a href="https://sanjeebtiwary.medium.com/unlocking-the-path-to-becoming-a-linkedin-top-voice-a38dd4665f51" class="image"><img src="images/pic07.jpg" alt="" /></a>
 										</article>
 
 								</div>
@@ -239,46 +335,46 @@
 									<li>
 										<article>
 											<header>
-												<h3><a href="single.html">Lorem ipsum fermentum ut nisl vitae</a></h3>
-												<time class="published" datetime="2015-10-20">October 20, 2015</time>
+												<h3><a href="https://sanjeebtiwary.blogspot.com/2024/02/in-dynamic-landscape-of-technological.html">Unleashing the Power of Conversations with IBM Watsonx Assistant</a></h3>
+												<time class="published" datetime="2015-10-20">Feb 25, 2024</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<a href="https://sanjeebtiwary.blogspot.com/2024/02/in-dynamic-landscape-of-technological.html" class="image"><img src="images/pic08.jpg" alt="" /></a>
 										</article>
 									</li>
 									<li>
 										<article>
 											<header>
-												<h3><a href="single.html">Convallis maximus nisl mattis nunc id lorem</a></h3>
-												<time class="published" datetime="2015-10-15">October 15, 2015</time>
+												<h3><a href="https://sanjeebtiwary.blogspot.com/2023/08/prediction-of-algae-growth-machine.html">Prediction of Algae Growth: A Machine Learning Perspective</a></h3>
+												<time class="published" datetime="2015-10-15">Aug 11, 2023</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<a href="https://sanjeebtiwary.blogspot.com/2023/08/prediction-of-algae-growth-machine.html" class="image"><img src="images/pic09.jpg" alt="" /></a>
 										</article>
 									</li>
 									<li>
 										<article>
 											<header>
-												<h3><a href="single.html">Euismod amet placerat vivamus porttitor</a></h3>
-												<time class="published" datetime="2015-10-10">October 10, 2015</time>
+												<h3><a href="https://sanjeebtiwary.blogspot.com/2024/02/blog-post.html">Unraveling the Wonders of Data Science: A Journey into the World of Insights</a></h3>
+												<time class="published" datetime="2015-10-10">Feb 23, 2024</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic10.jpg" alt="" /></a>
+											<a href="https://sanjeebtiwary.blogspot.com/2024/02/blog-post.html" class="image"><img src="images/pic10.jpg" alt="" /></a>
 										</article>
 									</li>
 									<li>
 										<article>
 											<header>
-												<h3><a href="single.html">Magna enim accumsan tortor cursus ultricies</a></h3>
-												<time class="published" datetime="2015-10-08">October 8, 2015</time>
+												<h3><a href="https://sanjeebtiwary.medium.com/maximizing-network-efficiency-and-coverage-in-wireless-sensor-networks-7cacfa99c41f">Maximizing Network Efficiency and Coverage in Wireless Sensor Networks</a></h3>
+												<time class="published" datetime="2015-10-08">Aug 15, 2023</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic11.jpg" alt="" /></a>
+											<a href="https://sanjeebtiwary.medium.com/maximizing-network-efficiency-and-coverage-in-wireless-sensor-networks-7cacfa99c41f" class="image"><img src="images/pic11.jpg" alt="" /></a>
 										</article>
 									</li>
 									<li>
 										<article>
 											<header>
-												<h3><a href="single.html">Congue ullam corper lorem ipsum dolor</a></h3>
-												<time class="published" datetime="2015-10-06">October 7, 2015</time>
+												<h3><a href="https://sanjeebtiwary.medium.com/geospatial-analysis-unveiled-navigating-the-world-through-data-and-geography-8928187dae8e">Geospatial Analysis Unveiled: Navigating the World through Data and Geography</a></h3>
+												<time class="published" datetime="2015-10-06">Aug 25, 2023</time>
 											</header>
-											<a href="single.html" class="image"><img src="images/pic12.jpg" alt="" /></a>
+											<a href="https://sanjeebtiwary.medium.com/geospatial-analysis-unveiled-navigating-the-world-through-data-and-geography-8928187dae8e" class="image"><img src="images/pic12.jpg" alt="" /></a>
 										</article>
 									</li>
 								</ul>
@@ -287,22 +383,16 @@
 						<!-- About -->
 							<section class="blurb">
 								<h2>About</h2>
-								<p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod amet placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at phasellus sed ultricies.</p>
+								<p>	I am a dedicated freelance data scientist and computer science student at KiiT University, passionate about leveraging large language models, generative AI, cloud computing, and computer vision. With a proven track record, I've crafted data-driven solutions for clients like Microsoft Learn Student Ambassadors and MedTourEasy. My expertise extends to areas such as Statistical Modeling, Scikit-Learn, and research in algae identification using computer vision, showcasing my commitment to real-world problem-solving. Explore my blog for insights into my innovative projects and contributions to sustainability.</p>
 								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
+									<li><a href="single.html" class="button">Learn More</a></li>
 								</ul>
 							</section>
 
 						<!-- Footer -->
 							<section id="footer">
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
-									<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-								<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+
+								<p class="copyright">&copy; Untitled. Design: <a href="https://sanjeebtiwary.github.io/Sanjeeb-Tiwary/LICENSE.txt">Sanjeeb Tiwary</a>. Images: <a href="http://unsplash.com">Unsplash</a> and <a href="https://www.google.co.in/">Google</a>.</p>
 							</section>
 
 					</section>
